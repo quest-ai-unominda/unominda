@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import unoMindaLogo from "@/assets/uno-minda-logo.png";
 import heroVideo1 from "@/assets/videos/hero-video-1.mp4";
 import heroVideo2 from "@/assets/videos/hero-video-2.mp4";
 import heroVideo3 from "@/assets/videos/hero-video-3.mp4";
@@ -59,18 +58,9 @@ export const HeroSection = () => {
           }`}
         />
 
-        {/* Subtle gradient overlay for better logo visibility */}
+        {/* Subtle gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/60" />
       </motion.div>
-
-      {/* Logo - Top Left */}
-      <div className="relative z-10 p-6 md:p-8">
-        <img
-          src={unoMindaLogo}
-          alt="Uno Minda"
-          className="h-12 md:h-16 lg:h-20 w-auto"
-        />
-      </div>
 
       {/* Spacer to maintain hero height */}
       <div className="h-full" />
