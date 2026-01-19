@@ -8,64 +8,64 @@
 
 @layer base {
   :root {
-    /* Deep slate background with warm undertones */
-    --background: 220 20% 10%;
-    --foreground: 45 20% 95%;
+    /* Deep slate background with cool undertones */
+    --background: 222 25% 8%;
+    --foreground: 210 20% 95%;
 
     /* Cards with subtle elevation */
-    --card: 220 18% 13%;
-    --card-foreground: 45 20% 95%;
+    --card: 222 22% 11%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 220 18% 13%;
-    --popover-foreground: 45 20% 95%;
+    --popover: 222 22% 11%;
+    --popover-foreground: 210 20% 95%;
 
-    /* Rich amber/gold primary - premium feel */
-    --primary: 38 92% 50%;
-    --primary-foreground: 220 20% 10%;
+    /* Vibrant blue primary - modern tech feel */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 25% 8%;
 
-    /* Deep teal secondary - sophisticated accent */
-    --secondary: 168 76% 42%;
-    --secondary-foreground: 220 20% 10%;
+    /* Lighter blue secondary - complementary accent */
+    --secondary: 199 89% 48%;
+    --secondary-foreground: 222 25% 8%;
 
     /* Muted slate tones */
-    --muted: 220 15% 18%;
-    --muted-foreground: 220 10% 55%;
+    --muted: 222 18% 16%;
+    --muted-foreground: 217 15% 55%;
 
     /* Accent matches primary */
-    --accent: 38 92% 50%;
-    --accent-foreground: 220 20% 10%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 222 25% 8%;
 
     --destructive: 0 72% 51%;
-    --destructive-foreground: 45 20% 95%;
+    --destructive-foreground: 210 20% 95%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 38 92% 50%;
+    --border: 222 18% 18%;
+    --input: 222 18% 18%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens - Premium Dark Theme */
-    --gradient-primary: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(28 90% 55%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(168 76% 42%) 0%, hsl(178 70% 45%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(220 20% 10%) 0%, hsl(220 22% 8%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 18% 15%) 0%, hsl(220 18% 11%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(38 92% 50% / 0.12) 0%, transparent 70%);
+    /* Custom tokens - Premium Dark Blue Theme */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(199 89% 48%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(210 100% 55%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(222 25% 8%) 0%, hsl(222 28% 6%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 22% 13%) 0%, hsl(222 22% 9%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(217 91% 60% / 0.12) 0%, transparent 70%);
     
-    --shadow-glow: 0 0 40px hsl(38 92% 50% / 0.25);
-    --shadow-card: 0 8px 32px hsl(220 30% 5% / 0.5);
-    --shadow-hover: 0 16px 48px hsl(38 92% 50% / 0.2);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.25);
+    --shadow-card: 0 8px 32px hsl(222 30% 4% / 0.5);
+    --shadow-hover: 0 16px 48px hsl(217 91% 60% / 0.2);
 
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    --sidebar-background: 220 18% 13%;
-    --sidebar-foreground: 45 20% 95%;
-    --sidebar-primary: 38 92% 50%;
-    --sidebar-primary-foreground: 220 20% 10%;
-    --sidebar-accent: 220 15% 18%;
-    --sidebar-accent-foreground: 45 20% 95%;
-    --sidebar-border: 220 15% 20%;
-    --sidebar-ring: 38 92% 50%;
+    --sidebar-background: 222 22% 11%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 25% 8%;
+    --sidebar-accent: 222 18% 16%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 222 18% 18%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
@@ -157,10 +157,10 @@
 
   @keyframes pulse-glow {
     0%, 100% {
-      box-shadow: 0 0 20px hsl(38 92% 50% / 0.3);
+      box-shadow: 0 0 20px hsl(217 91% 60% / 0.3);
     }
     50% {
-      box-shadow: 0 0 40px hsl(38 92% 50% / 0.6);
+      box-shadow: 0 0 40px hsl(217 91% 60% / 0.6);
     }
   }
 
@@ -170,9 +170,9 @@
 
   .video-overlay {
     background: linear-gradient(180deg, 
-      hsl(220 20% 10% / 0.3) 0%, 
-      hsl(220 20% 10% / 0.7) 50%, 
-      hsl(220 20% 10% / 0.95) 100%
+      hsl(222 25% 8% / 0.3) 0%, 
+      hsl(222 25% 8% / 0.7) 50%, 
+      hsl(222 25% 8% / 0.95) 100%
     );
   }
 }
