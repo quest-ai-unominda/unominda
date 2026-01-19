@@ -4,62 +4,68 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-/* Uno Minda AI Hub - Industrial Futuristic Design System */
+/* Uno Minda AI Hub - Premium Dark Slate & Amber Design System */
 
 @layer base {
   :root {
-    --background: 40 30% 96%;
-    --foreground: 30 10% 15%;
+    /* Deep slate background with warm undertones */
+    --background: 220 20% 10%;
+    --foreground: 45 20% 95%;
 
-    --card: 40 25% 98%;
-    --card-foreground: 30 10% 15%;
+    /* Cards with subtle elevation */
+    --card: 220 18% 13%;
+    --card-foreground: 45 20% 95%;
 
-    --popover: 40 25% 98%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 220 18% 13%;
+    --popover-foreground: 45 20% 95%;
 
-    --primary: 199 89% 40%;
-    --primary-foreground: 0 0% 100%;
+    /* Rich amber/gold primary - premium feel */
+    --primary: 38 92% 50%;
+    --primary-foreground: 220 20% 10%;
 
-    --secondary: 25 95% 50%;
-    --secondary-foreground: 0 0% 100%;
+    /* Deep teal secondary - sophisticated accent */
+    --secondary: 168 76% 42%;
+    --secondary-foreground: 220 20% 10%;
 
-    --muted: 40 20% 92%;
-    --muted-foreground: 30 10% 40%;
+    /* Muted slate tones */
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 55%;
 
-    --accent: 199 89% 40%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent matches primary */
+    --accent: 38 92% 50%;
+    --accent-foreground: 220 20% 10%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 45 20% 95%;
 
-    --border: 40 20% 88%;
-    --input: 40 20% 88%;
-    --ring: 199 89% 40%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 38 92% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens - Light Cream Theme */
-    --gradient-primary: linear-gradient(135deg, hsl(199 89% 40%) 0%, hsl(220 90% 50%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(25 95% 50%) 0%, hsl(35 95% 55%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(40 30% 96%) 0%, hsl(40 25% 94%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(40 25% 98%) 0%, hsl(40 30% 96%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(199 89% 40% / 0.1) 0%, transparent 70%);
+    /* Custom tokens - Premium Dark Theme */
+    --gradient-primary: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(28 90% 55%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(168 76% 42%) 0%, hsl(178 70% 45%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(220 20% 10%) 0%, hsl(220 22% 8%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 18% 15%) 0%, hsl(220 18% 11%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(38 92% 50% / 0.12) 0%, transparent 70%);
     
-    --shadow-glow: 0 0 40px hsl(199 89% 40% / 0.15);
-    --shadow-card: 0 8px 32px hsl(30 10% 15% / 0.08);
-    --shadow-hover: 0 12px 48px hsl(199 89% 40% / 0.12);
+    --shadow-glow: 0 0 40px hsl(38 92% 50% / 0.25);
+    --shadow-card: 0 8px 32px hsl(220 30% 5% / 0.5);
+    --shadow-hover: 0 16px 48px hsl(38 92% 50% / 0.2);
 
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    --sidebar-background: 40 25% 98%;
-    --sidebar-foreground: 30 10% 15%;
-    --sidebar-primary: 199 89% 40%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 40 20% 92%;
-    --sidebar-accent-foreground: 30 10% 15%;
-    --sidebar-border: 40 20% 88%;
-    --sidebar-ring: 199 89% 40%;
+    --sidebar-background: 220 18% 13%;
+    --sidebar-foreground: 45 20% 95%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 45 20% 95%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 38 92% 50%;
   }
 }
 
@@ -151,10 +157,10 @@
 
   @keyframes pulse-glow {
     0%, 100% {
-      box-shadow: 0 0 20px hsl(199 89% 40% / 0.2);
+      box-shadow: 0 0 20px hsl(38 92% 50% / 0.3);
     }
     50% {
-      box-shadow: 0 0 40px hsl(199 89% 40% / 0.4);
+      box-shadow: 0 0 40px hsl(38 92% 50% / 0.6);
     }
   }
 
@@ -164,9 +170,9 @@
 
   .video-overlay {
     background: linear-gradient(180deg, 
-      hsl(40 30% 96% / 0.3) 0%, 
-      hsl(40 30% 96% / 0.7) 50%, 
-      hsl(40 30% 96% / 0.95) 100%
+      hsl(220 20% 10% / 0.3) 0%, 
+      hsl(220 20% 10% / 0.7) 50%, 
+      hsl(220 20% 10% / 0.95) 100%
     );
   }
 }
