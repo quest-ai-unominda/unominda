@@ -18,8 +18,8 @@ export const HeroSection = () => {
     offset: ["start start", "end start"],
   });
 
-  // Fade to 20% opacity when scrolling past hero
-  const videoOpacity = useTransform(scrollYProgress, [0, 0.8, 1], [1, 1, 0.2]);
+  // Start at full opacity (1), only begin fading after scroll starts
+  const videoOpacity = useTransform(scrollYProgress, [0, 0.1, 0.8, 1], [1, 1, 0.5, 0.2]);
 
   // Handle video end - transition to next video
   const handleVideoEnd = () => {
